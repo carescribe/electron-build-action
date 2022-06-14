@@ -9,4 +9,4 @@ pwd
 echo "Output of ls -lah"
 ls -lah
 echo "HOME DIR $HOME with WINEPREFIX $WINEPREFIX"
-DISABLE_ESLINT_PLUGIN=true yarn build:windows:production -p never
+DISABLE_ESLINT_PLUGIN=true yarn build:windows:production:msi -p never
