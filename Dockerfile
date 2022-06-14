@@ -1,8 +1,7 @@
 # Base Image - ubuntu latest
 FROM electronuserland/builder:wine-mono
 
-WORKDIR /codesign
-
-RUN echo "Seems to work. Happy days!"
+COPY ./entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
