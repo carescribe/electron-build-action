@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -e
 
+rm -rf /github/home
+mkdir /github/home
+
 echo "The wine container has started: "
 pwd
 echo "Output of ls -lah"
