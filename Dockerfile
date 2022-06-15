@@ -6,4 +6,5 @@ WORKDIR /electron-build
 COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["tail"]
+CMD ["-f","/dev/null"]
